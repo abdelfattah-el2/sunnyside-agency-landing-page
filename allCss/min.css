@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  /* Colors  */
+  --soft-red-C: hsl(7, 99%, 70%);
+  --Yellow-C: hsl(51, 100%, 49%);
+  --graphic-design-text-C: hsl(167, 40%, 24%);
+  --photography-text-C: hsl(198, 62%, 26%);
+  --footer-C: hsl(168, 34%, 41%);
+
+  --desaturated-blue: hsl(212, 27%, 19%);
+  --dark-grayish-blue: hsl(213, 9%, 39%);
+  --grayish-blue: hsl(232, 10%, 55%);
+  --Grayish-blue: hsl(210, 4%, 67%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  font-family: "Fraunces", serif;
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+}
+/* Start nav */
+.navbar .navbar-nav .nav-link {
+  color: var(--White);
+  border-radius: 30px;
+  padding: 12px 26px !important ;
+  margin-right: 20px;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+.navbar .navbar-nav .active {
+  color: black !important;
+  padding: 12px 26px !important ;
+  font-family: "Fraunces", serif;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+@media (max-width: 991px) {
+  .navbar .navbar-nav .nav-link {
+    color: var(--Grayish-blue);
+    width: fit-content;
+  }
+  .navbar .navbar-nav .active {
+    color: black;
+    padding: 10px 20px !important;
+    font-family: "Fraunces", serif;
+    background-color: var(--Yellow-C) !important;
+    border-radius: 30px;
+  }
+  .navbar .navbar-nav .nav-link:hover {
+    background-color: transparent;
+  }
+}
+.navbar .navbar-toggler {
+  border: none;
+  color: var(--White);
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border: none;
+  color: var(--Grayish-blue) !important;
+}
+/* End nav */
+/* Start landing */
+.landing {
+  background-image: url("../sunnyside-agency-landing-page-main/images/desktop/image-header.jpg");
+  background-size: cover;
+  min-height:calc( 100vh + 100px ) ;
+  
+}
+
+/* End landing */
