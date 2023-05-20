@@ -27,7 +27,7 @@ body {
   padding: 12px 26px !important ;
   margin-right: 20px;
   font-size: 16px;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .navbar .navbar-nav .active {
@@ -37,12 +37,27 @@ body {
   background-color: hsl(0, 0%, 100%);
   border-radius: 30px;
   text-transform: uppercase;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 @media (max-width: 991px) {
+  .navbar .navbar-nav {
+    background-color: var(--White);
+    padding: 20px;
+    transition: 0.2s;
+  }
+  .navbar .navbar-nav::after {
+    content: " ";
+    position: absolute;
+    top: 33px;
+    right: 3%;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent transparent var(--White) transparent;
+  }
   .navbar .navbar-nav .nav-link {
     color: var(--dark-grayish-blue);
     width: fit-content;
+    margin-right: 0;
   }
   .navbar .navbar-nav .active {
     color: black;
@@ -50,9 +65,6 @@ body {
     font-family: "Fraunces", serif;
     background-color: var(--Yellow-C) !important;
     border-radius: 30px;
-  }
-  .navbar .navbar-nav .nav-link:hover {
-    background-color: transparent;
   }
 }
 .navbar .navbar-toggler {
@@ -77,9 +89,53 @@ body {
   letter-spacing: 10px;
 }
 .landing .text-center h1 {
-  margin-bottom: 100px;
+  margin-bottom: 90px;
 }
-
+.landing .text-center .arrowe {
+  height: 205px;
+  width: 8px;
+  background-color: var(--White);
+  position: relative;
+  top: 0%;
+  left: 50%;
+  margin: 0px;
+  border-radius: 15px;
+  animation: arrowe 2s infinite;
+  cursor: pointer;
+}
+.landing .text-center .arrowe::after,
+.landing .text-center .arrowe::before {
+  content: " ";
+  position: absolute;
+  top: 88%;
+  width: 65px;
+  height: 8px;
+  background-color: white;
+  border-radius: 15px;
+}
+@keyframes arrowe {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-40px);
+  }
+  60% {
+    transform: translateY(-20px);
+  }
+}
+.landing .text-center .arrowe::after {
+  left: -100%;
+  transform: rotate(-45deg);
+}
+.landing .text-center .arrowe::before {
+  right: -100%;
+  transform: rotate(45deg);
+}
 @media (max-width: 991px) {
   .landing {
     background-image: url("../sunnyside-agency-landing-page-main/images/mobile/image-header.jpg");
@@ -89,3 +145,61 @@ body {
   }
 }
 /* End landing */
+/* Start About */
+.about .contect .info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 70px;
+}
+.about .contect .cont-img img {
+  width: 100%;
+}
+.about .contect .cont-img .text {
+  
+}
+.about .contect .info h2 {
+  margin-bottom: 50px;
+  font-family: "Fraunces", serif;
+  font-size: 35px;
+  font-weight: bolder;
+  margin-right: 250px;
+}
+.about .contect .info p {
+  color: var(--dark-grayish-blue);
+  line-height: 2;
+  letter-spacing: 0.2px;
+  margin: 0px 10px 10px;
+}
+.about .contect .info .more {
+  font-family: "Fraunces", serif;
+  display: inline-block;
+  transform: translate(14px, 45px);
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+}
+.about .contect .info .left:hover::after {
+  content: " ";
+  position: absolute;
+  bottom: 1%;
+  right:-7% ;
+  width: 122px;
+  height: 10px;
+  background-color: var(--Yellow-C);
+  border-radius: 6px;
+  z-index: -1;
+}
+.about .contect .info .right:hover::after {
+  content: " ";
+  position: absolute;
+  bottom: 1%;
+  right:-7% ;
+  width: 122px;
+  height: 10px;
+  background-color: var(--soft-red-C);
+  border-radius: 6px;
+  z-index: -1;
+}
+
+/* Start End */
