@@ -254,3 +254,70 @@ body {
   }
 }
 /* Start End */
+/* Start Testimonals */
+.testimonl {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.testimonl .header {
+  margin: 0 auto 70px;
+  font-family: "Fraunces", serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--Grayish-blue);
+}
+.testimonl .box:hover {
+  background-color: hsl(213deg 100% 50% / 10%);
+  transform: 0.3s;
+}
+
+.testimonl .box p {
+  color: var(--dark-grayish-blue);
+  line-height: 2;
+  font-size: 19px;
+  margin: 20px 20px 65px 20px;
+}
+.testimonl .box .name h3 {
+  font-family: "Fraunces", serif;
+  margin-top: 60px;
+}
+.testimonl .box .name span {
+  margin: 20px;
+  display: inline-block;
+  color: var(--Grayish-blue);
+  font-size: 17px;
+}
+.over {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000000;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.ad-to {
+  text-align: center;
+  background-color: white;
+  border-radius: 23px;
+  padding: 20px;
+  margin: 15px;
+}
+.btn-X {
+  border-radius: 28%;
+  background-color: hsl(7deg 87.59% 61.92%);
+  color: white;
+  padding: 3px 25px;
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+}
+.btn-X:hover {
+  transition: 0.3s;
+  background-color: red;
+}
+/* End Testimonals */
