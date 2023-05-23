@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../allCss/all.min.css" />
     <link rel="stylesheet" href="../allCss/min.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;800&family=Fraunces:wght@700;900&display=swap"
       rel="stylesheet"
     />
     <title>Frontend Mentor | Sunnyside agency landing page</title>
@@ -27,6 +27,7 @@
       .attribution {
         font-size: 11px;
         text-align: center;
+        background-color: hsl(168.86deg 42.17% 67.45%);
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -38,9 +39,7 @@
 
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img src="./images/favicon-32x32.png" alt=""
-        /></a>
+        <a class="navbar-brand" href="#"><h1 class="logo">sunnyisde</h1></a>
         <button
           class="navbar-toggler shadow-none border-light"
           type="button"
@@ -58,18 +57,21 @@
         >
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
             <li class="nav-item">
-              <a class="nav-link p-lg-3 active" aria-current="page" href="#"
+              <a
+                class="nav-link p-lg-3 active"
+                aria-current="page"
+                href="#about"
                 >About</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link p-lg-3" href="#">Services</a>
+              <a class="nav-link p-lg-3" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-lg-3" href="#">Projects</a>
+              <a class="nav-link p-lg-3" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-lg-3" href="#">Contact</a>
+              <a class="nav-link p-lg-3" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -78,15 +80,18 @@
 
     <!-- end the nav -->
     <!-- Start landing -->
-    <div class="landing d-flex justify-content-center align-items-center">
+    <div
+      class="landing d-flex justify-content-center align-items-center"
+      id="about"
+    >
       <div class="text-center text-light">
         <h1 class="fs-1 lh-base">We are creatives</h1>
-        <div class="arrowe"></div>
+        <a href="#services"><div class="arrowe"></div></a>
       </div>
     </div>
     <!-- End landing -->
-    <!-- Start About -->
-    <div class="about">
+    <!-- Start Services -->
+    <div class="about" id="services">
       <div class="contect">
         <div
           class="row p-0 d-flex justify-content-center align-items-center m-0"
@@ -94,16 +99,17 @@
           <div class="col p-0">
             <div class="info">
               <h2>Transform your brand</h2>
-              <p class="text-md-start">
+              <p class="text-md-start left">
                 We are a full-service creative agency specializing in helping
                 brands grow fast. Engage your clients through compelling visuals
                 that do most of the marketing for you.
               </p>
-              <div class="more left">Learn more</div>
+              <div class="more left leftjs">Learn more</div>
             </div>
           </div>
-          <div class="cont-img col p-0">
+          <div class="cont-img col p-0 left-img">
             <img
+              class="img-fluid"
               src="../sunnyside-agency-landing-page-main/images/desktop/image-transform.jpg"
               alt=""
             />
@@ -112,7 +118,7 @@
         <div
           class="row p-0 d-flex justify-content-center align-items-center m-0"
         >
-          <div class="cont-img col p-0">
+          <div class="cont-img col p-0 right-img">
             <img
               src="../sunnyside-agency-landing-page-main/images/desktop/image-stand-out.jpg"
               alt=""
@@ -121,12 +127,12 @@
           <div class="cont-img col p-0">
             <div class="info">
               <h2>Stand out to the right audience</h2>
-              <p class="text-md-start">
+              <p class="text-md-start right">
                 Using a collaborative formula of designers, researchers,
                 photographers, videographers, and copywriters, we’ll build and
                 extend your brand in digital places.
               </p>
-              <div class="more right">Learn more</div>
+              <div class="more right rightjs">Learn more</div>
             </div>
           </div>
         </div>
@@ -172,14 +178,14 @@
         </div>
       </div>
     </div>
-    <!-- End About -->
+    <!-- End Services -->
     <!-- Start Testimonals -->
     <div class="testimonl text-sm-center text-center">
       <div class="container">
         <h2 class="header">Client testimonials</h2>
         <div class="row">
           <div class="col-sm-6 col-md-4 col-lg-4">
-            <div class="box gap-5 mb-2" data-num="one">
+            <div class="box gap-5 mb-2" data-num="">
               <img
                 class="img-fluid rounded-pill mb-5 mt-3"
                 src="../sunnyside-agency-landing-page-main/images/image-emily.jpg"
@@ -196,7 +202,7 @@
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-4">
-            <div class="box gap-5 mb-2" data-num="two">
+            <div class="box gap-5 mb-2" data-num="">
               <img
                 class="img-fluid rounded-pill mb-5 mt-3"
                 src="../sunnyside-agency-landing-page-main/images/image-thomas.jpg"
@@ -213,7 +219,7 @@
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-4">
-            <div class="box gap-5 mb-2" data-num="three">
+            <div class="box gap-5 mb-2" data-num="">
               <img
                 class="img-fluid rounded-pill mb-5 mt-3"
                 src="../sunnyside-agency-landing-page-main/images/image-jennie.jpg"
@@ -234,44 +240,74 @@
     </div>
     <!-- End Testimonals -->
     <!-- Start ourFuntser -->
-    <div class="row gx-0">
-      <div class="col-sm-6 col-md-3 col-lg-3 p-0 ">
+    <div class="row gx-0" id="projects">
+      <div class="col-sm-6 col-md-3 col-lg-3 p-0">
         <div>
-        <img class="img-fluid" src="../sunnyside-agency-landing-page-main/images/desktop//image-gallery-milkbottles.jpg" alt="">
+          <img
+            class="img-fluid"
+            src="../sunnyside-agency-landing-page-main/images/desktop//image-gallery-milkbottles.jpg"
+            alt=""
+          />
+        </div>
       </div>
-      </div>
-      <div class="col-sm-6 col-md-3 col-lg-3 p-0 ">
+      <div class="col-sm-6 col-md-3 col-lg-3 p-0">
         <div>
-        <img  class="img-fluid" src="../sunnyside-agency-landing-page-main/images/desktop//image-gallery-orange.jpg" alt="">
+          <img
+            class="img-fluid"
+            src="../sunnyside-agency-landing-page-main/images/desktop//image-gallery-orange.jpg"
+            alt=""
+          />
+        </div>
       </div>
-      </div>
-      <div class="col-sm-6 col-md-3 col-lg-3 p-0 ">
+      <div class="col-sm-6 col-md-3 col-lg-3 p-0">
         <div>
-        <img class="img-fluid" src="../sunnyside-agency-landing-page-main/images/desktop//image-gallery-cone.jpg" alt="">
+          <img
+            class="img-fluid"
+            src="../sunnyside-agency-landing-page-main/images/desktop//image-gallery-cone.jpg"
+            alt=""
+          />
+        </div>
       </div>
-      </div>
-      <div class="col-sm-6 col-md-3 col-lg-3 p-0 ">
+      <div class="col-sm-6 col-md-3 col-lg-3 p-0">
         <div>
-        <img class="img-fluid"  src="../sunnyside-agency-landing-page-main/images/desktop//image-gallery-sugarcubes.jpg" alt="">
-      </div>
+          <img
+            class="img-fluid"
+            src="../sunnyside-agency-landing-page-main/images/desktop//image-gallery-sugarcubes.jpg"
+            alt=""
+          />
+        </div>
       </div>
     </div>
     <!-- End ourFuntser -->
     <!-- Start footer -->
-    <footer class="footre">
-      <h1>sunnyisde</h1>
-      <ul class="links">
-        <li>About</li>
-        <li> Services</li>
-        <li>Projects</li>
-      </ul>
-      <div class="loge">
-        <ul>
-          <li><i class="fa-brands fa-square-facebook"></i></li>
-          <li><i class="fa-brands fa-instagram"></i></li>
-          <li><i class="fa-brands fa-twitter"></i></li>
-          <li><i class="fa-brands fa-pinterest"></i></li>
+    <footer class="footre" id="contact">
+      <div class="container text-center">
+        <h1 class="mb-5">sunnyisde</h1>
+        <ul
+          class="links mb-5 p-3 d-flex justify-content-center align-items-center"
+        >
+          <li><a href="">About </a></li>
+          <li><a href="">Services </a></li>
+          <li><a href="">Projects </a></li>
         </ul>
+        <div class="loge mt-5">
+          <ul
+            class="link-so p-3 d-flex justify-content-center align-items-center"
+          >
+            <li>
+              <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-pinterest"></i></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
     <!-- End footer -->
@@ -279,7 +315,8 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Abdelfattah</a>.
+      <span class="time"></span>
     </div>
     <script src="../all_js/bootstrap.bundle.js"></script>
     <script src="../all_js/all.min.js"></script>
