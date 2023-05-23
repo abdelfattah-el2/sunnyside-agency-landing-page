@@ -331,7 +331,8 @@ body {
 }
 .testimonl .box {
   position: relative;
-  overflow: hidden;
+  overflow: hidden ;
+  cursor: pointer;
 }
 .testimonl .box::after {
   content: "";
