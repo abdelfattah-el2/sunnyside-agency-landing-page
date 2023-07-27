@@ -88,10 +88,11 @@ body {
 /* End nav */
 /* Start landing */
 .landing {
-  background-image: url("../sunnyside-agency-landing-page-main/images/desktop/image-header.jpg");
-  background-size: cover;
-  min-height: calc(100vh + 64px);
+  background-image:  url("../sunnyside-agency-landing-page-main/images/desktop/image-header.jpg") !important;
   background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: calc(100vh + 64px);
 }
 .landing .text-center {
   font-family: "Fraunces", serif;
